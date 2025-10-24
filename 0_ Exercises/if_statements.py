@@ -99,3 +99,83 @@ if emotion_1 == 'fat' or emotion_2 == 'sad':
     print('Go to the fucking gym')
 else:
     print('Keep going to the fucking gym')
+
+# EXERCISES
+alien_color = 'green'
+if alien_color == 'green':
+    print('You just earned 5 miserable points')
+else
+print('You just earned 10 good points')
+
+alien_color = 'red'
+if alien_color == 'green':
+    print('You just earned 5 points')
+elif alien_color == 'yellow':
+    print('You just earned 10 ')
+elif alien_color == 'red':
+    print('You just earned 15 points')
+
+# stages of life
+age = 13
+if age < 2:
+    print('You\'re a baby')
+elif age >= 4 and age < 13:
+    print('You\'re a kid')
+elif age >= 13 and age < 20:
+    print('You\'re a teen')
+elif age >= 20 and age < 65:
+    print('You\'re an Adult')
+else:
+    print('You\'re a Senior')
+
+# favorite_fruits
+
+favorite_fruits = ['Orange', 'Blueberries', 'Mango']
+if 'Orange' in favorite_fruits:
+    print('You really like Oranges')
+if 'Blueberries' in favorite_fruits:
+    print('You really like Blueberries')
+if 'Mango' in favorite_fruits:
+    print('You really like Mango')
+print('\nJust keep eating fruits bastard!')
+
+# EXERCISES
+
+users = ['Paola', 'Elisa', 'Ariana', 'Jose', 'Antonio', 'Admin']
+if users:
+    for user in users:
+        if user == 'Admin':
+            print('Welcome again Admin, do you want to see a status report?')
+        else:
+            print(f'Hello {user},thank you for logging in again.')
+else:
+    print('We need to find some users')
+
+# Checking usernames
+
+current_users = ['Paola', 'Elisa', 'Ariana', 'Jose', 'Antonio']
+new_users = ['Pedro', 'Jomar', 'pelo_liso', 'Paola1']
+
+current_users_lowercase = []
+for current_user in current_users:
+    current_users_lowercase.append(current_user.lower())
+
+for new_user in new_users:
+    if new_user.lower() in current_users_lowercase:
+        print(f'Sorry, {new_user}, this username is already in use')
+    else:
+        print(f'Welcome!,{new_user}')
+
+# Ordinal_Numbers
+
+ordinal_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+for ordinal_number in ordinal_numbers:
+    if ordinal_number == 1:
+        print(f'{ordinal_number}st')
+    elif ordinal_number == 2:
+        print(f'{ordinal_number}nd')
+    elif ordinal_number == 3:
+        print(f'{ordinal_number}rd')
+    else:
+        print(f'{ordinal_number}th')
