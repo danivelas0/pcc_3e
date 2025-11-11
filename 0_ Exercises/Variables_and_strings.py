@@ -97,7 +97,7 @@ print("Languages:\n\tPython\n\tC\n\tJavaScript")
 
 # Python provides several built-in string methods that allow you to manipulate and work with strings effectively. Here are some commonly used string methods:
 
-# 1. lower(: Converts all characters in the string to lowercase.
+# 1. lower(): Converts all characters in the string to lowercase.
 # 2. upper(): Converts all characters in the string to uppercase.
 # 3. title(): Converts the first character of each word to uppercase and the rest to lowercase.
 # 4. strip(): Removes leading and trailing whitespace from the string.
@@ -113,12 +113,12 @@ print(course.upper())  # Output: PYTHON FOR BEGINNERS
 print(course.title())  # Output: Python For Beginner
                     
 
+
+
 ce
-course="   Python for Beginners   "
-print(course.strip())  # Output: Python for Beginners
-  
+course  
 # Finding Substrings
-print(course.find("for"))  # Output: 7
+int(course.find("for"))  # Output: 7
 print("Python" in course)  # Output: True
 print("Java" in course)  # Output: False
 print("Java" not in course)  # Output: True
@@ -128,23 +128,24 @@ print("Python" not in course)  # Output: False
 
 print(course.replace("Beginners", "Absolute Beginners")) # Output: Python for Absolute Beginners # Original string remains unchanged: Python for Beginners
 print(course.replace("for", "4"))  # Output: Python 4 Beginners
-# Output: Python for riginal string remains unchangedBeginners
+# Output: Python for  remains unchangedinneriginal string remains unchangedBeginners
+print(course.replace("Beginners", ""))
 print(course.replace("Beginners", ""))
 print(course.replace("for", "4")) utput4
 
 # Removingl="https://nostarch.com" 
 nostarch_url=nostarch_url.removeprefix("https://") 
-print(nostar c h_url)  # Output: nostrch.com 
-nostarch_url = nostarch_url.removesuffix(".com") 
+print(nostar c h_url)  # Output: nstrch.com 
+nostarch_url   = nostarch_url.removesuffix(".com") 
 print(nostarch_url)  # Output: nostarch 
   
 #EXERCISES 
 
-# ame="Paol
+#  ame="Pao
 
 name t (name)
 
-name = name.upper()
+name =name.upper()
 print(name)
 
 name = name.lower()
@@ -159,12 +160,14 @@ print(name)
 
 quote='Albert Einstein once said, "A person who never made a mistake never tried anything new"'
 print(quote)
-  
-quote2= 'Price is what you pay. Value is what you get.'
-message= f'Warren Buffet once said, "{quote2}"'
-print( message) 
- 
-filename='pyth
+   = 'Albert Einstein once said, "A person who never made a mistake never tried anything new"'
+print(quote)
+
+quote2 = 'Price is what you pay. Value is what you get.'
+message = f'Warren Buffet once said, "{quote2}"'
+print(message)
+
+filename p
 
 filename  
 
