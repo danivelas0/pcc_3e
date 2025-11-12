@@ -1,6 +1,6 @@
 # defining attributes - player data
 
-# _______________________________________________________
+# ________________________________________________________________________________
 
 # --- Core Stats ---
 player_name = "Arthur Morgan"
@@ -25,7 +25,7 @@ player_inventory_equipment = [
 player_inventory_consumables = ['chewing tobaco', 'cigarettes',
                                 'oatcakes', 'brandy', 'chocolate bar', 'canned salmon']
 
-# ______________________________________________________
+# ______________________________________________________________________________
 
 # DICTIONARY - PLAYER DATA STORED - STATIC DATA
 
@@ -35,6 +35,7 @@ player = {
     'stamina': 100,
     'level': 1,
     'money': 100.0,
+    'honor': 1.0,
     'inventory_weapons': ['bow',
                           'arrows', 'knife', 'revolver', 'pistol', 'rifle'],
     'inventory_equipment': [
@@ -90,3 +91,77 @@ player['inventory_weapons'] = {
 # chaining keys
 
 print(player['inventory_weapons']['revolver']['ammo'])
+
+# ______________________________________________________________________________
+
+# IF STATEMENTS AND WHILE LOOPS
+
+# Arthur's Honor
+player['honor'] = -0.5
+if player['honor'] >= 0.75:
+    print('You\'re a paragon')
+elif player['honor'] <= -0.25:
+    print('You are dishonorable')
+else:
+    print('You are walking the middle path.')
+
+# stamina
+player['stamina'] = 50
+
+While player['stamina'] < 100:
+    # adds 10 to stamina
+    player['stamina'] += 10
+    # prints the new stamina
+    print(f'Your stamina is now: {player['stamina']}')
+print('Stamina is full')
+
+# FUNCTIONS______________________________________________________________________
+
+# fighting action
+player = {
+    'name': 'Arthur Morgan',
+    'health': 80,
+    'stamina': 100,
+    'level': 1,
+    'money': 100.0,
+    'honor': 1.0,
+    'inventory_weapons': ['bow',
+                          'arrows', 'knife', 'revolver', 'pistol', 'rifle'],
+    'inventory_equipment': [
+        'lasso', 'binoculars', 'holster', 'fishing rod', 'lantern'],
+    'inventory_consumables': ['chewing tobacco', 'cigarettes',
+                              'oatcakes', 'brandy',],
+
+}
+
+
+def take_damage(damage_amount):
+    player['health'] -= damage_amount
+    # cheking if player is alive
+    if player['health'] > 0:
+        print(f'Ouch! Arthur took {damage_amount} damage.')
+        # display current health
+        print(f'Health is now:{player['health']}')
+        return True
+    # player is dead
+    else:
+        player['health'] = 0
+        print('DEAD')
+        return False
+
+
+# healing_action
+MAX_HEALTH = 100  # GLOBAL_VARIABLE
+
+
+def heal(heal_amount):
+    player['health'] += heal_amount
+    if player['health'] > MAX_HEALTH:
+        player['health'] = MAX_HEALTH
+        print('You are at full health')
+    else:
+        print(f'You healed! Health is now:{player['health']}')
+    return player['health']
+
+
+# MAIN CODE GAME----------------------------------------------------------------
